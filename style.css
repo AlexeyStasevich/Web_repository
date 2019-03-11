@@ -1,0 +1,158 @@
+header {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 80px;
+  background-color: #B7E4B7;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.9; }
+  header div {
+    justify-content: center;
+    align-self: center; }
+  header .logotype p {
+    font: 32px Berlin Sans FB;
+    margin-top: 0px; }
+  header .home p, header .about p, header .blog p {
+    font: bold 20px Segoe Print; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #FDB014;
+  display: grid; }
+
+.grid, .calendar div, .recordsList div {
+  display: grid; }
+
+.wrap {
+  width: 1400px;
+  margin: 0 auto; }
+
+.inactive {
+  display: none; }
+
+.tab_main, .tab_main1 {
+  background-color: #CEF2CE;
+  height: 600px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.tab_main1 {
+  border-radius: 10px;
+  grid-column: span 2;
+  padding: 40px 10%;
+  box-sizing: border-box; }
+
+.calendar {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+  grid-template-rows: 2fr 2fr 12fr 3fr; }
+  .calendar p {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20xp; }
+  .calendar .calTitleMonthLine {
+    height: 50px;
+    grid-template-columns: 10% 80% 10%;
+    margin: 0 2%;
+    background-color: #A0A334;
+    border-radius: 5px; }
+    .calendar .calTitleMonthLine p {
+      font-size: 28px;
+      text-align: center;
+      font-family: serif;
+      color: white;
+      align-self: center; }
+  .calendar .calTitleWeekLine, .calendar .calLine {
+    grid-template-columns: repeat(7, 1fr); }
+    .calendar .calTitleWeekLine P, .calendar .calLine P {
+      align-self: center; }
+  .calendar .calDay {
+    background-color: white;
+    width: 80%;
+    align-items: center;
+    align-self: stretch;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 0 2px;
+    border-radius: 10px;
+    cursor: pointer; }
+  .calendar .few {
+    background-color: #fcdda2; }
+  .calendar .med {
+    background-color: #fdb014; }
+  .calendar .lot {
+    background-color: #A0A334; }
+  .calendar .calLegRow {
+    background-color: white;
+    border: 2px solid #fdb014;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5px;
+    border-radius: 5px; }
+    .calendar .calLegRow div {
+      align-self: center;
+      margin: 0 auto;
+      padding: 5px;
+      width: 60%;
+      border: 1px solid black;
+      border-radius: 5px; }
+
+.recordsList {
+  grid-template-rows: 1fr 8fr; }
+  .recordsList .listHead {
+    grid-template-columns: 1fr 4fr;
+    height: 60px;
+    margin-bottom: 10px; }
+    .recordsList .listHead div {
+      align-self: center; }
+      .recordsList .listHead div P {
+        font: 22px Helvetica;
+        margin: 0 auto; }
+    .recordsList .listHead .listData {
+      margin: 0 0 0 auto; }
+      .recordsList .listHead .listData p {
+        font-size: 30px;
+        font-weight: 500; }
+    .recordsList .listHead .bBack {
+      color: white;
+      background-color: #A0A334;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer; }
+  .recordsList .listMain {
+    border: 2px solid #fdb014;
+    overflow-y: scroll;
+    height: 320px;
+    background-color: #fcdda2;
+    padding: 10px; }
+  .recordsList .record {
+    border-bottom: 2px solid #fdb014;
+    padding: 10px;
+    margin: 0 10px;
+    box-sizing: border-box; }
+  .recordsList .recHead {
+    grid-template-columns: 1fr 1fr;
+    font-size: 24px;
+    font-family: Helvetica; }
+    .recordsList .recHead .recButt {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      width: 60px;
+      align-self: flex-end;
+      margin-left: auto;
+      margin-right: -5px; }
+      .recordsList .recHead .recButt .recButtDel {
+        font-size: 34px;
+        margin-top: -3px; }
+
+/*# sourceMappingURL=style.css.map */

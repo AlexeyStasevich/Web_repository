@@ -1,0 +1,38 @@
+$colM1:#CEF2CE;
+
+@mixin borR($rad){
+    border-radius: $rad;
+}
+@mixin bgCol($col){
+    background-color: $col;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #FDB014;
+    display: grid;
+}
+.grid{
+    display:grid;
+}
+.wrap{
+    width: 1400px;
+    margin: 0 auto;
+}
+.inactive{
+    display: none;
+}
+    .tab_main{
+        @include bgCol($colM1);
+        
+        height: 600px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        
+    }
