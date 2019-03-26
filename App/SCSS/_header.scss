@@ -1,12 +1,11 @@
-$colorHbg: #B7E4B7;
+$colorHbg: #F9A20B;
 $colorHT1: white;
 
 @mixin bgCol($col){
     background-color: $col;
 }
-header{    
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 80px;
+header{
+    @extend .header-grid;
     @include bgCol($colorHbg);
     border-radius: 0 0 10px 10px; 
     color:$colorHT1;

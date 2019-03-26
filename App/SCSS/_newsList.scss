@@ -1,0 +1,88 @@
+$colM1:#F9A20B;
+$colM2:#F55A22;
+$colM3:#8AFC18;
+$colM4:#FCDD18;
+$colM5:#F7E754;
+
+.tab_main2{
+	@extend .tab_main;
+	border-radius: 30px 30px 10px 10px;
+    
+    padding: 40px 10%;
+    box-sizing: border-box;
+}
+
+.recordsList{
+    .listHead{
+        height: 60px;
+        margin-bottom: 10px;
+        div{
+            align-self: center;
+           
+            P{
+                font: 22px Helvetica;
+                margin: 0 auto;
+            }
+            
+        }
+        .listData{
+            margin: 0 0 0 auto;
+            p{
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+        .bBack{
+            color: white;
+            background-color: $colM2;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .listMain{
+         border: 2px solid $colM4;
+        overflow-y: scroll;
+        height: 320px;
+        background-color: $colM5;
+        padding: 10px;
+        
+    }
+    .record{
+        border-bottom:2px solid $colM4;
+        padding: 10px;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    .recHead{
+        font-size: 24px;
+        font-family:  Helvetica;
+        .recButt{
+            width: 60px;
+            align-self: flex-end;
+            margin-left: auto;
+            margin-right: -5px;
+			cursor: pointer;
+            
+            .recButtDel{
+                font-size: 34px;
+                margin-top: -3px;
+				cursor: pointer;
+            }
+        }
+    }
+	.bCreate{
+			height: 44px;
+			width: 224px;
+            color: white;
+            background-color: $colM2;
+            margin: 8px 0px;
+            border-radius: 5px;
+            cursor: pointer;
+			align-self: center;
+            P{
+                font: 22px Helvetica;
+                margin: auto;
+            }
+        }
+}

@@ -1,0 +1,236 @@
+.grid, .calendar div, .recordsList div, .tab_main3-grid .reductor div, .tab_main3 .reductor div {
+  display: grid; }
+
+.inactive {
+  display: none; }
+
+.header-grid, header {
+  display: grid;
+  grid-template-areas: "header header header header";
+  grid-template-rows: 80px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.tab_main1-grid, .tab_main1 {
+  grid-column: span 2; }
+
+.calendar {
+  grid-template-rows: 2fr 2fr 12fr 2fr; }
+  .calendar .calTitleMonthLine {
+    grid-template-columns: 10% 80% 10%; }
+  .calendar .calTitleWeekLine, .calendar .calLine {
+    grid-template-columns: repeat(7, 1fr); }
+  .calendar .calLegRow {
+    grid-template-columns: repeat(4, 1fr); }
+
+.tab_main2-grid {
+  grid-column: span 2; }
+
+.recordsList {
+  grid-template-rows: 1fr 4fr 1fr; }
+  .recordsList .listHead {
+    grid-template-columns: 1fr 4fr; }
+  .recordsList .recHead {
+    grid-template-columns: 1fr 1fr; }
+    .recordsList .recHead .recButt {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; }
+
+.tab_main3-grid .reductor, .tab_main3 .reductor {
+  grid-template-rows: 40px 420px 50px;
+  grid-row-gap: 20px;
+  grid-column: 1/span 2; }
+
+header {
+  background-color: #F9A20B;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.9; }
+  header div {
+    justify-content: center;
+    align-self: center; }
+  header .logotype p {
+    font: 32px Berlin Sans FB;
+    margin-top: 0px; }
+  header .home p, header .about p, header .blog p {
+    font: bold 20px Segoe Print; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #FDB014; }
+
+.wrap {
+  width: 1400px;
+  margin: 0 auto; }
+
+.tab_main, .tab_main1, .tab_main2, .tab_main3 {
+  background-color: #F9A20B;
+  height: 600px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+/* _____________________________________________________________________ */
+.tab_main1 {
+  border-radius: 10px;
+  padding: 40px 10%;
+  box-sizing: border-box; }
+
+.calendar {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box; }
+  .calendar p {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20xp; }
+  .calendar .calTitleMonthLine {
+    height: 50px;
+    margin: 0 2%;
+    background-color: #F55A22;
+    border-radius: 2px; }
+    .calendar .calTitleMonthLine p {
+      font: 28px Berlin Sans FB;
+      text-align: center;
+      color: white;
+      align-self: center; }
+  .calendar .calTitleWeekLine P, .calendar .calLine P {
+    align-self: center;
+    font: 24px Berlin Sans FB; }
+  .calendar .calDay {
+    background-color: white;
+    width: 80%;
+    align-items: center;
+    align-self: stretch;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 0 2px;
+    border-radius: 2px;
+    border: 1px solid black;
+    cursor: pointer; }
+  .calendar .few {
+    background-color: #8AFC18; }
+  .calendar .med {
+    background-color: #FCDD18; }
+  .calendar .lot {
+    background-color: #F55A22; }
+  .calendar .calLegRow {
+    background-color: white;
+    border: 2px solid #FCDD18;
+    margin-top: 5px;
+    border-radius: 5px; }
+    .calendar .calLegRow div {
+      align-self: center;
+      margin: 0 auto;
+      padding: 0px;
+      width: 60%;
+      border: 1px solid black;
+      border-radius: 5px; }
+      .calendar .calLegRow div p {
+        font: bold 14px Segoe Print; }
+
+.tab_main2 {
+  border-radius: 30px 30px 10px 10px;
+  padding: 40px 10%;
+  box-sizing: border-box; }
+
+.recordsList .listHead {
+  height: 60px;
+  margin-bottom: 10px; }
+  .recordsList .listHead div {
+    align-self: center; }
+    .recordsList .listHead div P {
+      font: 22px Helvetica;
+      margin: 0 auto; }
+  .recordsList .listHead .listData {
+    margin: 0 0 0 auto; }
+    .recordsList .listHead .listData p {
+      font-size: 30px;
+      font-weight: 500; }
+  .recordsList .listHead .bBack {
+    color: white;
+    background-color: #F55A22;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer; }
+.recordsList .listMain {
+  border: 2px solid #FCDD18;
+  overflow-y: scroll;
+  height: 320px;
+  background-color: #F7E754;
+  padding: 10px; }
+.recordsList .record {
+  border-bottom: 2px solid #FCDD18;
+  padding: 10px;
+  margin: 0 10px;
+  box-sizing: border-box; }
+.recordsList .recHead {
+  font-size: 24px;
+  font-family: Helvetica; }
+  .recordsList .recHead .recButt {
+    width: 60px;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: -5px;
+    cursor: pointer; }
+    .recordsList .recHead .recButt .recButtDel {
+      font-size: 34px;
+      margin-top: -3px;
+      cursor: pointer; }
+.recordsList .bCreate {
+  height: 44px;
+  width: 224px;
+  color: white;
+  background-color: #F55A22;
+  margin: 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center; }
+  .recordsList .bCreate P {
+    font: 22px Helvetica;
+    margin: auto; }
+
+.tab_main3 {
+  padding: 20px 40px;
+  border-radius: 0 30px 10px 10px; }
+  .tab_main3 input {
+    align-items: center;
+    align-self: stretch;
+    background-color: #F7E754;
+    border-radius: 10px;
+    border: 2px solid #FCDD18;
+    padding: 0 10px;
+    width: 220px; }
+  .tab_main3 .news_head input {
+    font-size: 20px; }
+  .tab_main3 .news_mainText textarea {
+    width: 900px;
+    overflow-y: scroll;
+    align-self: stretch;
+    resize: none;
+    background-color: #F7E754;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #FCDD18;
+    padding: 5px;
+    font-size: 18px; }
+  .tab_main3 .button {
+    width: 200px;
+    cursor: pointer;
+    background-color: #F55A22; }
+    .tab_main3 .button p {
+      align-self: center;
+      align-items: center;
+      text-align: center;
+      font: 20px Helvetica;
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */

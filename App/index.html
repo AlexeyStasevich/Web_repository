@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Calendar</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wrap-grid">
 
-   <img src="background.jpg" alt="" style="position: fixed;top:0;left: 0;right:0;bottom:0; z-index: -10;opacity: 0.9;width:100%;height: 100%">
+   <img src="Img/background.jpg" alt="" style="position: fixed;top:0;left: 0;right:0;bottom:0; z-index: -10;opacity: 0.9;width:100%;height: 100%">
   
    <header class="grid">
        <div class="logotype">
@@ -26,7 +25,7 @@
      </div>  
    </header>
    <div class="mainPart grid">
-       <div class="tab_main1 active">
+       <div class="tab_main1 grid">
            <div class="calendar grid">
               <div class="calTitleMonthLine">
                   <div class="bPrev"><p>&lt;</p></div>
@@ -56,7 +55,7 @@
                       <p>Sun</p>
                   </div>
               </div>
-              <div class="calMain" onclick="fun3()">
+              <div class="calMain" >
                   <div class="calLine">
                       <div class="calDay">
                           <p>25</p>
@@ -210,12 +209,13 @@
                       <p>A lot of news</p>
                   </div>
               </div>
-                            
+              </div>              
            </div>
-           <div class="recordsList inactive">
+		   <div class="tab_main2 inactive">
+           <div class="recordsList grid">
                <div class="listHead">
-                   <div class="bBack" onclick= "fun4()">
-                       <p>&larr; Назад</p>
+                   <div class="bBack">
+                       <p>&larr; Go back</p>
                    </div>
                    <div class="listData">
                        <p>9.03.2019</p>
@@ -225,7 +225,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #1</p>
+                               <p>News header #1</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -243,7 +243,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #2</p>
+                               <p>News header #2</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -261,7 +261,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #3</p>
+                               <p>News header #3</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -279,7 +279,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #4</p>
+                               <p>News header #4</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -297,7 +297,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #5</p>
+                               <p>News header #5</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -315,7 +315,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #6</p>
+                               <p>News header #6</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -333,7 +333,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #7</p>
+                               <p>News header #7</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -351,7 +351,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #8</p>
+                               <p>News header #8</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -369,7 +369,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #9</p>
+                               <p>News header #9</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -387,7 +387,7 @@
                    <div class="record">
                        <div class="recHead">
                            <div class="recTitle">
-                               <p>News #10</p>
+                               <p>News header #10</p>
                            </div>
                            <div class="recButt">
                                <div class="recButtEd">
@@ -403,7 +403,18 @@
                        </div>
                    </div>
                </div>
+			   <div class="bCreate">
+                       <p>Create news</p>
+               </div>
            </div>
+		   </div>
+		   <div class="tab_main3 inactive">
+		   <div class="reductor grid">
+				<div class="news_head"><input type="text" placeholder="News header"></div>
+				<div class="news_mainText"><textarea name="" id="" cols="5" rows="5" wrap="soft" placeholder="Description"></textarea></div>
+				<div class="button"><p>Save</p></div>
+		   </div>
+		   </div>
        </div>       
    </div>
     </div>

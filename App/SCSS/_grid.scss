@@ -1,0 +1,66 @@
+
+.grid{
+    display:grid;
+}
+
+.inactive{
+    display: none;
+}
+
+.header-grid{
+	display: grid;
+	grid-template-areas: "header header header header";
+	grid-template-rows: 80px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tab_main1-grid{
+    grid-column: span 2;
+}
+
+.calendar{
+    grid-template-rows: 2fr 2fr 12fr 2fr;
+    div{
+        @extend .grid;
+    }
+	.calTitleMonthLine{
+        grid-template-columns:10% 80% 10%;
+    }
+	.calTitleWeekLine, .calLine{
+        grid-template-columns: repeat(7, 1fr);
+    }
+	.calLegRow{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.tab_main2-grid{
+	grid-column: span 2;
+}
+
+.recordsList{
+    grid-template-rows: 1fr 4fr 1fr;
+	div{
+        @extend .grid;    }
+	.listHead{
+        grid-template-columns: 1fr 4fr;
+    }
+	.recHead{
+        grid-template-columns: 1fr 1fr;
+        .recButt{
+           grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+}	
+	
+.tab_main3-grid{
+	.reductor{	
+        grid-template-rows: 40px 420px 50px;
+        grid-row-gap: 20px;
+        grid-column: 1/span 2;
+        div{
+            @extend .grid;
+        }
+	}
+}

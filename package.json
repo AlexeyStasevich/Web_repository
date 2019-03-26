@@ -1,0 +1,25 @@
+{
+  "name": "gulp",
+  "version": "3.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeyStasevich/Web_repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeyStasevich/Web_repository/issues"
+  },
+  "homepage": "https://github.com/AlexeyStasevich/Web_repository#readme",
+  "devDependencies": {
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
